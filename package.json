@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sraj50/unexpected-ether#readme",
   "devDependencies": {
+    "ganache-cli": "^6.12.1",
     "truffle": "^5.1.52"
   }
 }
