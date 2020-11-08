@@ -1,0 +1,23 @@
+{
+  "name": "unexpected-ether",
+  "version": "1.0.0",
+  "description": "Playing around with smart contract security vulnerabilities, in this case unexpected ether.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sraj50/unexpected-ether.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sraj50/unexpected-ether/issues"
+  },
+  "homepage": "https://github.com/sraj50/unexpected-ether#readme",
+  "devDependencies": {
+    "truffle": "^5.1.52"
+  }
+}
