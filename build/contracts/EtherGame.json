@@ -12,7 +12,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -25,7 +26,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -38,7 +40,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -51,7 +54,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -64,7 +68,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -77,14 +82,16 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
       "name": "play",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [],
@@ -92,24 +99,38 @@
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.0+commit.9e61f92b\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"claimReward\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"finalMileStone\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"finalReward\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"mileStone1Reward\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"mileStone2Reward\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"payoutMileStone1\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"payoutMileStone2\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"play\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/sid/repos/web3/unexpected-ether/contracts/EtherGame.sol\":\"EtherGame\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/sid/repos/web3/unexpected-ether/contracts/EtherGame.sol\":{\"keccak256\":\"0x05f8a97d503ce3fd78c39dd616b36f0943c7a4681162bf83dbf7071d9184196b\",\"urls\":[\"bzz-raw://fe0c2b1de22e335a3bf5236960f99179fce8164bf1cb3afa50ad4376b1b44b8c\",\"dweb:/ipfs/QmfDzv7BmndbLwKsZ3qXvjsB4k4YTGBWhJUz8H9xSF6yZF\"]}},\"version\":1}",
-  "bytecode": "0x60806040526729a2241af62c0000600055671bc16d674ec80000600155674563918244f400006002556729a2241af62c0000600355678ac7230489e80000600455674563918244f4000060055534801561005857600080fd5b5061042a806100686000396000f3fe60806040526004361061007b5760003560e01c806382d4a75c1161004e57806382d4a75c1461012c5780638c6f37591461015757806393e84cd914610182578063b88a802f1461018c5761007b565b806316a1883a146100805780631c95cfc1146100ab57806333c2a9f8146100d65780636e1d553714610101575b600080fd5b34801561008c57600080fd5b506100956101a3565b6040518082815260200191505060405180910390f35b3480156100b757600080fd5b506100c06101a9565b6040518082815260200191505060405180910390f35b3480156100e257600080fd5b506100eb6101af565b6040518082815260200191505060405180910390f35b34801561010d57600080fd5b506101166101b5565b6040518082815260200191505060405180910390f35b34801561013857600080fd5b506101416101bb565b6040518082815260200191505060405180910390f35b34801561016357600080fd5b5061016c6101c1565b6040518082815260200191505060405180910390f35b61018a6101c7565b005b34801561019857600080fd5b506101a161030c565b005b60045481565b60025481565b60005481565b60055481565b60015481565b60035481565b6706f05b59d3b2000034146101db57600080fd5b600034470190506004548111156101f157600080fd5b60005481141561024f57600154600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540192505081905550610309565b6002548114156102ad57600354600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540192505081905550610308565b60045481141561030757600554600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055505b5b5b50565b600454471461031a57600080fd5b6000600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020541161036657600080fd5b6000600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055503373ffffffffffffffffffffffffffffffffffffffff166108fc479081150290604051600060405180830381858888f193505050501580156103f1573d6000803e3d6000fd5b5056fea2646970667358221220bd6860ed47db05ad91bcfbe4c915f607ce8bf626c3161e04a861e1b905260cf664736f6c63430007000033",
-  "deployedBytecode": "0x60806040526004361061007b5760003560e01c806382d4a75c1161004e57806382d4a75c1461012c5780638c6f37591461015757806393e84cd914610182578063b88a802f1461018c5761007b565b806316a1883a146100805780631c95cfc1146100ab57806333c2a9f8146100d65780636e1d553714610101575b600080fd5b34801561008c57600080fd5b506100956101a3565b6040518082815260200191505060405180910390f35b3480156100b757600080fd5b506100c06101a9565b6040518082815260200191505060405180910390f35b3480156100e257600080fd5b506100eb6101af565b6040518082815260200191505060405180910390f35b34801561010d57600080fd5b506101166101b5565b6040518082815260200191505060405180910390f35b34801561013857600080fd5b506101416101bb565b6040518082815260200191505060405180910390f35b34801561016357600080fd5b5061016c6101c1565b6040518082815260200191505060405180910390f35b61018a6101c7565b005b34801561019857600080fd5b506101a161030c565b005b60045481565b60025481565b60005481565b60055481565b60015481565b60035481565b6706f05b59d3b2000034146101db57600080fd5b600034470190506004548111156101f157600080fd5b60005481141561024f57600154600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540192505081905550610309565b6002548114156102ad57600354600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540192505081905550610308565b60045481141561030757600554600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055505b5b5b50565b600454471461031a57600080fd5b6000600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020541161036657600080fd5b6000600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055503373ffffffffffffffffffffffffffffffffffffffff166108fc479081150290604051600060405180830381858888f193505050501580156103f1573d6000803e3d6000fd5b5056fea2646970667358221220bd6860ed47db05ad91bcfbe4c915f607ce8bf626c3161e04a861e1b905260cf664736f6c63430007000033",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.0+commit.9e61f92b\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"claimReward\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"finalMileStone\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"finalReward\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"mileStone1Reward\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"mileStone2Reward\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"payoutMileStone1\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"payoutMileStone2\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"play\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/sid/repos/web3/unexpected-ether/contracts/EtherGame.sol\":\"EtherGame\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/sid/repos/web3/unexpected-ether/contracts/EtherGame.sol\":{\"keccak256\":\"0xffa862e4e6ddebfd25bab59c6c8f12b487de062de9719cca3041021f325d63d2\",\"urls\":[\"bzz-raw://4851cd22368b77f6dbb42086d2a5c7ff641bee07703f68c64007dc00b9b3b302\",\"dweb:/ipfs/Qma6VdPMYh8JXHxp9kBLmr2HRtS7tynqzVZvBHSWE7kp4u\"]}},\"version\":1}",
+  "bytecode": "0x60806040526729a2241af62c0000600055671bc16d674ec80000600155674563918244f400006002556729a2241af62c0000600355678ac7230489e80000600455674563918244f4000060055534801561005857600080fd5b50610468806100686000396000f3fe6080604052600436106100865760003560e01c80636e1d5537116100595780636e1d55371461013757806382d4a75c146101625780638c6f37591461018d57806393e84cd9146101b8578063b88a802f146101c257610086565b806312065fe01461008b57806316a1883a146100b65780631c95cfc1146100e157806333c2a9f81461010c575b600080fd5b34801561009757600080fd5b506100a06101d9565b6040518082815260200191505060405180910390f35b3480156100c257600080fd5b506100cb6101e1565b6040518082815260200191505060405180910390f35b3480156100ed57600080fd5b506100f66101e7565b6040518082815260200191505060405180910390f35b34801561011857600080fd5b506101216101ed565b6040518082815260200191505060405180910390f35b34801561014357600080fd5b5061014c6101f3565b6040518082815260200191505060405180910390f35b34801561016e57600080fd5b506101776101f9565b6040518082815260200191505060405180910390f35b34801561019957600080fd5b506101a26101ff565b6040518082815260200191505060405180910390f35b6101c0610205565b005b3480156101ce57600080fd5b506101d761034a565b005b600047905090565b60045481565b60025481565b60005481565b60055481565b60015481565b60035481565b6706f05b59d3b20000341461021957600080fd5b6000344701905060045481111561022f57600080fd5b60005481141561028d57600154600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540192505081905550610347565b6002548114156102eb57600354600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540192505081905550610346565b60045481141561034557600554600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055505b5b5b50565b600454471461035857600080fd5b6000600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054116103a457600080fd5b6000600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055503373ffffffffffffffffffffffffffffffffffffffff166108fc479081150290604051600060405180830381858888f1935050505015801561042f573d6000803e3d6000fd5b5056fea2646970667358221220302aa8672a57ad6e8dc5d1fe783ec41da0576362a87e48050405804a09e4335a64736f6c63430007000033",
+  "deployedBytecode": "0x6080604052600436106100865760003560e01c80636e1d5537116100595780636e1d55371461013757806382d4a75c146101625780638c6f37591461018d57806393e84cd9146101b8578063b88a802f146101c257610086565b806312065fe01461008b57806316a1883a146100b65780631c95cfc1146100e157806333c2a9f81461010c575b600080fd5b34801561009757600080fd5b506100a06101d9565b6040518082815260200191505060405180910390f35b3480156100c257600080fd5b506100cb6101e1565b6040518082815260200191505060405180910390f35b3480156100ed57600080fd5b506100f66101e7565b6040518082815260200191505060405180910390f35b34801561011857600080fd5b506101216101ed565b6040518082815260200191505060405180910390f35b34801561014357600080fd5b5061014c6101f3565b6040518082815260200191505060405180910390f35b34801561016e57600080fd5b506101776101f9565b6040518082815260200191505060405180910390f35b34801561019957600080fd5b506101a26101ff565b6040518082815260200191505060405180910390f35b6101c0610205565b005b3480156101ce57600080fd5b506101d761034a565b005b600047905090565b60045481565b60025481565b60005481565b60055481565b60015481565b60035481565b6706f05b59d3b20000341461021957600080fd5b6000344701905060045481111561022f57600080fd5b60005481141561028d57600154600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540192505081905550610347565b6002548114156102eb57600354600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540192505081905550610346565b60045481141561034557600554600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055505b5b5b50565b600454471461035857600080fd5b6000600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054116103a457600080fd5b6000600660003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055503373ffffffffffffffffffffffffffffffffffffffff166108fc479081150290604051600060405180830381858888f1935050505015801561042f573d6000803e3d6000fd5b5056fea2646970667358221220302aa8672a57ad6e8dc5d1fe783ec41da0576362a87e48050405804a09e4335a64736f6c63430007000033",
   "immutableReferences": {},
-  "sourceMap": "25:1457:0:-:0;;;82:7;51:38;;126:7;95:38;;170:7;139:38;;214:7;183:38;;256:8;227:37;;296:7;270:33;;25:1457;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "25:1457:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;227:37;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;139:38;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;51;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;270:33;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;95:38;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;183;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;431:721;;;:::i;:::-;;1158:321;;;;;;;;;;;;;:::i;:::-;;227:37;;;;:::o;139:38::-;;;;:::o;51:::-;;;;:::o;270:33::-;;;;:::o;95:38::-;;;;:::o;183:::-;;;;:::o;431:721::-;495:9;482;:22;474:31;;;;;;541:19;587:9;563:21;:33;541:55;;689:14;;671;:32;;663:41;;;;;;794:16;;776:14;:34;772:358;;;857:16;;826:15;:27;842:10;826:27;;;;;;;;;;;;;;;;:47;;;;;;;;;;;772:358;;;920:16;;902:14;:34;898:232;;;983:16;;952:15;:27;968:10;952:27;;;;;;;;;;;;;;;;:47;;;;;;;;;;;898:232;;;1046:14;;1028;:32;1024:106;;;1108:11;;1077:15;:27;1093:10;1077:27;;;;;;;;;;;;;;;;:42;;;;;;;;;;;1024:106;898:232;772:358;1139:7;431:721::o;1158:321::-;1270:14;;1245:21;:39;1237:48;;;;;;1377:1;1347:15;:27;1363:10;1347:27;;;;;;;;;;;;;;;;:31;1339:40;;;;;;1419:1;1389:15;:27;1405:10;1389:27;;;;;;;;;;;;;;;:31;;;;1430:10;:19;;:42;1450:21;1430:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1158:321::o",
-  "source": "pragma solidity ^0.7.0;\n\ncontract EtherGame {\n\n    uint public payoutMileStone1 = 3 ether;\n    uint public mileStone1Reward = 2 ether;\n    uint public payoutMileStone2 = 5 ether;\n    uint public mileStone2Reward = 3 ether;\n    uint public finalMileStone = 10 ether;\n    uint public finalReward = 5 ether;\n\n    mapping(address => uint) redeemableEther;\n    // Users pay 0.5 ether. At specific milestones, credit their accounts.\n    function play() external payable {\n        require(msg.value == 0.5 ether); // each play is 0.5 ether\n        uint currentBalance = address(this).balance + msg.value;\n        // ensure no players after the game has finished\n        require(currentBalance <= finalMileStone);\n        // if at a milestone, credit the player's account\n        if (currentBalance == payoutMileStone1) {\n            redeemableEther[msg.sender] += mileStone1Reward;\n        }\n        else if (currentBalance == payoutMileStone2) {\n            redeemableEther[msg.sender] += mileStone2Reward;\n        }\n        else if (currentBalance == finalMileStone ) {\n            redeemableEther[msg.sender] += finalReward;\n        }\n        return;\n    }\n\n    function claimReward() public {\n        // ensure the game is complete\n        require(address(this).balance == finalMileStone);\n        // ensure there is a reward to give\n        require(redeemableEther[msg.sender] > 0);\n        redeemableEther[msg.sender] = 0;\n        msg.sender.transfer(address(this).balance);\n    }\n }",
+  "sourceMap": "25:1558:0:-:0;;;82:7;51:38;;126:7;95:38;;170:7;139:38;;214:7;183:38;;256:8;227:37;;296:7;270:33;;25:1558;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "25:1558:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1485:95;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;227:37;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;139:38;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;51;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;270:33;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;95:38;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;183;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;431:721;;;:::i;:::-;;1158:321;;;;;;;;;;;;;:::i;:::-;;1485:95;1528:7;1552:21;1545:28;;1485:95;:::o;227:37::-;;;;:::o;139:38::-;;;;:::o;51:::-;;;;:::o;270:33::-;;;;:::o;95:38::-;;;;:::o;183:::-;;;;:::o;431:721::-;495:9;482;:22;474:31;;;;;;541:19;587:9;563:21;:33;541:55;;689:14;;671;:32;;663:41;;;;;;794:16;;776:14;:34;772:358;;;857:16;;826:15;:27;842:10;826:27;;;;;;;;;;;;;;;;:47;;;;;;;;;;;772:358;;;920:16;;902:14;:34;898:232;;;983:16;;952:15;:27;968:10;952:27;;;;;;;;;;;;;;;;:47;;;;;;;;;;;898:232;;;1046:14;;1028;:32;1024:106;;;1108:11;;1077:15;:27;1093:10;1077:27;;;;;;;;;;;;;;;;:42;;;;;;;;;;;1024:106;898:232;772:358;1139:7;431:721::o;1158:321::-;1270:14;;1245:21;:39;1237:48;;;;;;1377:1;1347:15;:27;1363:10;1347:27;;;;;;;;;;;;;;;;:31;1339:40;;;;;;1419:1;1389:15;:27;1405:10;1389:27;;;;;;;;;;;;;;;:31;;;;1430:10;:19;;:42;1450:21;1430:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1158:321::o",
+  "source": "pragma solidity ^0.7.0;\n\ncontract EtherGame {\n\n    uint public payoutMileStone1 = 3 ether;\n    uint public mileStone1Reward = 2 ether;\n    uint public payoutMileStone2 = 5 ether;\n    uint public mileStone2Reward = 3 ether;\n    uint public finalMileStone = 10 ether;\n    uint public finalReward = 5 ether;\n\n    mapping(address => uint) redeemableEther;\n    // Users pay 0.5 ether. At specific milestones, credit their accounts.\n    function play() external payable {\n        require(msg.value == 0.5 ether); // each play is 0.5 ether\n        uint currentBalance = address(this).balance + msg.value;\n        // ensure no players after the game has finished\n        require(currentBalance <= finalMileStone);\n        // if at a milestone, credit the player's account\n        if (currentBalance == payoutMileStone1) {\n            redeemableEther[msg.sender] += mileStone1Reward;\n        }\n        else if (currentBalance == payoutMileStone2) {\n            redeemableEther[msg.sender] += mileStone2Reward;\n        }\n        else if (currentBalance == finalMileStone ) {\n            redeemableEther[msg.sender] += finalReward;\n        }\n        return;\n    }\n\n    function claimReward() public {\n        // ensure the game is complete\n        require(address(this).balance == finalMileStone);\n        // ensure there is a reward to give\n        require(redeemableEther[msg.sender] > 0);\n        redeemableEther[msg.sender] = 0;\n        msg.sender.transfer(address(this).balance);\n    }\n\n    function getBalance() public view returns (uint256) {\n      return address(this).balance;\n    }\n }",
   "sourcePath": "/home/sid/repos/web3/unexpected-ether/contracts/EtherGame.sol",
   "ast": {
     "absolutePath": "/home/sid/repos/web3/unexpected-ether/contracts/EtherGame.sol",
     "exportedSymbols": {
       "EtherGame": [
-        131
+        143
       ]
     },
-    "id": 132,
+    "id": 144,
     "license": null,
     "nodeType": "SourceUnit",
     "nodes": [
@@ -131,9 +152,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 131,
+        "id": 143,
         "linearizedBaseContracts": [
-          131
+          143
         ],
         "name": "EtherGame",
         "nodeType": "ContractDefinition",
@@ -146,7 +167,7 @@
             "name": "payoutMileStone1",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 131,
+            "scope": 143,
             "src": "51:38:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -192,7 +213,7 @@
             "name": "mileStone1Reward",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 131,
+            "scope": 143,
             "src": "95:38:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -238,7 +259,7 @@
             "name": "payoutMileStone2",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 131,
+            "scope": 143,
             "src": "139:38:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -284,7 +305,7 @@
             "name": "mileStone2Reward",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 131,
+            "scope": 143,
             "src": "183:38:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -330,7 +351,7 @@
             "name": "finalMileStone",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 131,
+            "scope": 143,
             "src": "227:37:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -376,7 +397,7 @@
             "name": "finalReward",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 131,
+            "scope": 143,
             "src": "270:33:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -421,7 +442,7 @@
             "name": "redeemableEther",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 131,
+            "scope": 143,
             "src": "310:40:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -638,7 +659,7 @@
                             "referencedDeclaration": -28,
                             "src": "571:4:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_EtherGame_$131",
+                              "typeIdentifier": "t_contract$_EtherGame_$143",
                               "typeString": "contract EtherGame"
                             }
                           }
@@ -646,7 +667,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_EtherGame_$131",
+                              "typeIdentifier": "t_contract$_EtherGame_$143",
                               "typeString": "contract EtherGame"
                             }
                           ],
@@ -1300,7 +1321,7 @@
               "parameters": [],
               "src": "464:0:0"
             },
-            "scope": 131,
+            "scope": 143,
             "src": "431:721:0",
             "stateMutability": "payable",
             "virtual": false,
@@ -1341,7 +1362,7 @@
                                 "referencedDeclaration": -28,
                                 "src": "1253:4:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_EtherGame_$131",
+                                  "typeIdentifier": "t_contract$_EtherGame_$143",
                                   "typeString": "contract EtherGame"
                                 }
                               }
@@ -1349,7 +1370,7 @@
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_EtherGame_$131",
+                                  "typeIdentifier": "t_contract$_EtherGame_$143",
                                   "typeString": "contract EtherGame"
                                 }
                               ],
@@ -1716,7 +1737,7 @@
                               "referencedDeclaration": -28,
                               "src": "1458:4:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_EtherGame_$131",
+                                "typeIdentifier": "t_contract$_EtherGame_$143",
                                 "typeString": "contract EtherGame"
                               }
                             }
@@ -1724,7 +1745,7 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_EtherGame_$131",
+                                "typeIdentifier": "t_contract$_EtherGame_$143",
                                 "typeString": "contract EtherGame"
                               }
                             ],
@@ -1872,27 +1893,174 @@
               "parameters": [],
               "src": "1188:0:0"
             },
-            "scope": 131,
+            "scope": 143,
             "src": "1158:321:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 141,
+              "nodeType": "Block",
+              "src": "1537:43:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 137,
+                          "name": "this",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -28,
+                          "src": "1560:4:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_EtherGame_$143",
+                            "typeString": "contract EtherGame"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_contract$_EtherGame_$143",
+                            "typeString": "contract EtherGame"
+                          }
+                        ],
+                        "id": 136,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "1552:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": {
+                          "id": 135,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "1552:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": null,
+                            "typeString": null
+                          }
+                        }
+                      },
+                      "id": 138,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1552:13:0",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 139,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "balance",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": null,
+                    "src": "1552:21:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 134,
+                  "id": 140,
+                  "nodeType": "Return",
+                  "src": "1545:28:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "12065fe0",
+            "id": 142,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getBalance",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 131,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1504:2:0"
+            },
+            "returnParameters": {
+              "id": 134,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 133,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 142,
+                  "src": "1528:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 132,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1528:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1527:9:0"
+            },
+            "scope": 143,
+            "src": "1485:95:0",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
           }
         ],
-        "scope": 132,
-        "src": "25:1457:0"
+        "scope": 144,
+        "src": "25:1558:0"
       }
     ],
-    "src": "0:1482:0"
+    "src": "0:1583:0"
   },
   "legacyAST": {
     "absolutePath": "/home/sid/repos/web3/unexpected-ether/contracts/EtherGame.sol",
     "exportedSymbols": {
       "EtherGame": [
-        131
+        143
       ]
     },
-    "id": 132,
+    "id": 144,
     "license": null,
     "nodeType": "SourceUnit",
     "nodes": [
@@ -1914,9 +2082,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 131,
+        "id": 143,
         "linearizedBaseContracts": [
-          131
+          143
         ],
         "name": "EtherGame",
         "nodeType": "ContractDefinition",
@@ -1929,7 +2097,7 @@
             "name": "payoutMileStone1",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 131,
+            "scope": 143,
             "src": "51:38:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1975,7 +2143,7 @@
             "name": "mileStone1Reward",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 131,
+            "scope": 143,
             "src": "95:38:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2021,7 +2189,7 @@
             "name": "payoutMileStone2",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 131,
+            "scope": 143,
             "src": "139:38:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2067,7 +2235,7 @@
             "name": "mileStone2Reward",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 131,
+            "scope": 143,
             "src": "183:38:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2113,7 +2281,7 @@
             "name": "finalMileStone",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 131,
+            "scope": 143,
             "src": "227:37:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2159,7 +2327,7 @@
             "name": "finalReward",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 131,
+            "scope": 143,
             "src": "270:33:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2204,7 +2372,7 @@
             "name": "redeemableEther",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 131,
+            "scope": 143,
             "src": "310:40:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2421,7 +2589,7 @@
                             "referencedDeclaration": -28,
                             "src": "571:4:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_EtherGame_$131",
+                              "typeIdentifier": "t_contract$_EtherGame_$143",
                               "typeString": "contract EtherGame"
                             }
                           }
@@ -2429,7 +2597,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_EtherGame_$131",
+                              "typeIdentifier": "t_contract$_EtherGame_$143",
                               "typeString": "contract EtherGame"
                             }
                           ],
@@ -3083,7 +3251,7 @@
               "parameters": [],
               "src": "464:0:0"
             },
-            "scope": 131,
+            "scope": 143,
             "src": "431:721:0",
             "stateMutability": "payable",
             "virtual": false,
@@ -3124,7 +3292,7 @@
                                 "referencedDeclaration": -28,
                                 "src": "1253:4:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_EtherGame_$131",
+                                  "typeIdentifier": "t_contract$_EtherGame_$143",
                                   "typeString": "contract EtherGame"
                                 }
                               }
@@ -3132,7 +3300,7 @@
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_EtherGame_$131",
+                                  "typeIdentifier": "t_contract$_EtherGame_$143",
                                   "typeString": "contract EtherGame"
                                 }
                               ],
@@ -3499,7 +3667,7 @@
                               "referencedDeclaration": -28,
                               "src": "1458:4:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_EtherGame_$131",
+                                "typeIdentifier": "t_contract$_EtherGame_$143",
                                 "typeString": "contract EtherGame"
                               }
                             }
@@ -3507,7 +3675,7 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_EtherGame_$131",
+                                "typeIdentifier": "t_contract$_EtherGame_$143",
                                 "typeString": "contract EtherGame"
                               }
                             ],
@@ -3655,26 +3823,223 @@
               "parameters": [],
               "src": "1188:0:0"
             },
-            "scope": 131,
+            "scope": 143,
             "src": "1158:321:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 141,
+              "nodeType": "Block",
+              "src": "1537:43:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 137,
+                          "name": "this",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -28,
+                          "src": "1560:4:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_EtherGame_$143",
+                            "typeString": "contract EtherGame"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_contract$_EtherGame_$143",
+                            "typeString": "contract EtherGame"
+                          }
+                        ],
+                        "id": 136,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "1552:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": {
+                          "id": 135,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "1552:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": null,
+                            "typeString": null
+                          }
+                        }
+                      },
+                      "id": 138,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1552:13:0",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 139,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "balance",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": null,
+                    "src": "1552:21:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 134,
+                  "id": 140,
+                  "nodeType": "Return",
+                  "src": "1545:28:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "12065fe0",
+            "id": 142,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getBalance",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 131,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1504:2:0"
+            },
+            "returnParameters": {
+              "id": 134,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 133,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 142,
+                  "src": "1528:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 132,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1528:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1527:9:0"
+            },
+            "scope": 143,
+            "src": "1485:95:0",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
           }
         ],
-        "scope": 132,
-        "src": "25:1457:0"
+        "scope": 144,
+        "src": "25:1558:0"
       }
     ],
-    "src": "0:1482:0"
+    "src": "0:1583:0"
   },
   "compiler": {
     "name": "solc",
     "version": "0.7.0+commit.9e61f92b.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "1604879654509": {
+      "events": {},
+      "links": {},
+      "address": "0xCfEB869F69431e42cdB54A4F4f105C19C080A601",
+      "transactionHash": "0x79d65f571ae19c451fef6ca93f66c19d6a2984e25dbda94aafce7b9a6757a61f"
+    },
+    "1604882480474": {
+      "events": {},
+      "links": {},
+      "address": "0xCfEB869F69431e42cdB54A4F4f105C19C080A601",
+      "transactionHash": "0x90d05ae3b5cb7d6d720cb368125cfe54ea52ddb0bb113c5e454c5d8b31fbe7c9"
+    },
+    "1604882896610": {
+      "events": {},
+      "links": {},
+      "address": "0xCfEB869F69431e42cdB54A4F4f105C19C080A601",
+      "transactionHash": "0x067e10242c7d7022a075c2c46e016b5f1c8c36475a9d47468ec3879cc69954cb"
+    },
+    "1604886597091": {
+      "events": {},
+      "links": {},
+      "address": "0xCfEB869F69431e42cdB54A4F4f105C19C080A601",
+      "transactionHash": "0x067e10242c7d7022a075c2c46e016b5f1c8c36475a9d47468ec3879cc69954cb"
+    },
+    "1604887111436": {
+      "events": {},
+      "links": {},
+      "address": "0xCfEB869F69431e42cdB54A4F4f105C19C080A601",
+      "transactionHash": "0x067e10242c7d7022a075c2c46e016b5f1c8c36475a9d47468ec3879cc69954cb"
+    },
+    "1604887624579": {
+      "events": {},
+      "links": {},
+      "address": "0xCfEB869F69431e42cdB54A4F4f105C19C080A601",
+      "transactionHash": "0x067e10242c7d7022a075c2c46e016b5f1c8c36475a9d47468ec3879cc69954cb"
+    },
+    "1604888366892": {
+      "events": {},
+      "links": {},
+      "address": "0xCfEB869F69431e42cdB54A4F4f105C19C080A601",
+      "transactionHash": "0x79d65f571ae19c451fef6ca93f66c19d6a2984e25dbda94aafce7b9a6757a61f"
+    },
+    "1604914653869": {
+      "events": {},
+      "links": {},
+      "address": "0xCfEB869F69431e42cdB54A4F4f105C19C080A601",
+      "transactionHash": "0xa29b2cbb1418d0cd165ff24f8c62dc06f809ef54fcd1ef9f9cf66e2fce600999"
+    }
+  },
   "schemaVersion": "3.3.2",
-  "updatedAt": "2020-11-08T23:52:18.334Z",
+  "updatedAt": "2020-11-09T09:37:59.294Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

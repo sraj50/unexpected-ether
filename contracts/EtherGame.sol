@@ -37,4 +37,8 @@ contract EtherGame {
         redeemableEther[msg.sender] = 0;
         msg.sender.transfer(address(this).balance);
     }
+
+    function getBalance() public view returns (uint256) {
+      return address(this).balance;
+    }
  }

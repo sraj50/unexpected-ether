@@ -12,7 +12,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -25,7 +26,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -891,9 +893,59 @@
     "name": "solc",
     "version": "0.7.0+commit.9e61f92b.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "1604879654509": {
+      "events": {},
+      "links": {},
+      "address": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+      "transactionHash": "0x3f7fc325fe883ecc89de468cae90375dea066e1a182c078ec5ccc9c0be69a099"
+    },
+    "1604882480474": {
+      "events": {},
+      "links": {},
+      "address": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+      "transactionHash": "0x3f7fc325fe883ecc89de468cae90375dea066e1a182c078ec5ccc9c0be69a099"
+    },
+    "1604882896610": {
+      "events": {},
+      "links": {},
+      "address": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+      "transactionHash": "0x3f7fc325fe883ecc89de468cae90375dea066e1a182c078ec5ccc9c0be69a099"
+    },
+    "1604886597091": {
+      "events": {},
+      "links": {},
+      "address": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+      "transactionHash": "0x3f7fc325fe883ecc89de468cae90375dea066e1a182c078ec5ccc9c0be69a099"
+    },
+    "1604887111436": {
+      "events": {},
+      "links": {},
+      "address": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+      "transactionHash": "0x3f7fc325fe883ecc89de468cae90375dea066e1a182c078ec5ccc9c0be69a099"
+    },
+    "1604887624579": {
+      "events": {},
+      "links": {},
+      "address": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+      "transactionHash": "0x3f7fc325fe883ecc89de468cae90375dea066e1a182c078ec5ccc9c0be69a099"
+    },
+    "1604888366892": {
+      "events": {},
+      "links": {},
+      "address": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+      "transactionHash": "0x3f7fc325fe883ecc89de468cae90375dea066e1a182c078ec5ccc9c0be69a099"
+    },
+    "1604914653869": {
+      "events": {},
+      "links": {},
+      "address": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+      "transactionHash": "0x3f7fc325fe883ecc89de468cae90375dea066e1a182c078ec5ccc9c0be69a099"
+    }
+  },
   "schemaVersion": "3.3.2",
-  "updatedAt": "2020-11-08T23:52:18.336Z",
+  "updatedAt": "2020-11-09T09:37:59.315Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
