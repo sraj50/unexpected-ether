@@ -9,6 +9,8 @@ contract EtherGame {
     uint public finalMileStone = 10 ether;
     uint public finalReward = 5 ether;
 
+    event Receive(uint value);
+
     mapping(address => uint) redeemableEther;
     // Users pay 0.5 ether. At specific milestones, credit their accounts.
     function play() external payable {
@@ -39,6 +41,10 @@ contract EtherGame {
     }
 
     function getBalance() public view returns (uint256) {
-      return address(this).balance;
+        return address(this).balance;
+    }
+
+    fallback() payable external {
+        // emit Receive(msg.value);let
     }
  }
